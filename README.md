@@ -27,6 +27,9 @@ git clone git@github.com:llistnr/dotfiles.git ~/.dotfiles
 # Install brew packages(macOS)
 brew bundle
 
+# Install zsh plugins
+source ~/.dotfiles/zsh/install_plugins.sh
+
 # Create symbolic links
 ln -s ~/.dotfiles/git/gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/lazygit/config.yml ~/.config/lazygit/config.yml

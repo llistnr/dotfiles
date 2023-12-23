@@ -13,8 +13,7 @@ source $ZSH/oh-my-zsh.sh
 
 # virtualenv for prompt
 function virtualenv_info { 
-    [ $VIRTUAL_ENV ] && echo '('`basename $VIRTUAL_ENV`') ' \
-        || [ $CONDA_PROMPT_MODIFIER ] && echo `basename $CONDA_PROMPT_MODIFIER`''
+    [ $VIRTUAL_ENV ] && echo '('`basename $VIRTUAL_ENV`') '
 }
 
 # macOS
@@ -37,7 +36,6 @@ if [[ "$USER" == "airs" ]]; then
     fi
     unset __conda_setup
 fi
-export VIRTUAL_ENV_DISABLE_PROMPT=1
 
 # nvim
 alias vim="nvim"

@@ -1,0 +1,50 @@
+# oh-my-zsh
+export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME=seungho
+plugins=(
+    asdf
+    fasd
+    git
+    virtualenv
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+)
+source $ZSH/oh-my-zsh.sh
+
+# virtualenv for prompt
+function virtualenv_info { 
+    [ $VIRTUAL_ENV ] && echo '('`basename $VIRTUAL_ENV`') '
+}
+
+# macOS
+if [[ "$(uname)" == "Darwin" ]]; then
+    export PATH="$PATH:/opt/homebrew/bin"
+    export XDG_CONFIG_HOME="$HOME/.config"
+fi
+
+# airs: conda init
+if [[ "$USER" == "airs" ]]; then
+    __conda_setup="$('/home/airs/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+    if [ $? -eq 0 ]; then
+       eval "$__conda_setup"
+    else
+        if [ -f "/home/airs/miniconda3/etc/profile.d/conda.sh" ]; then
+            . "/home/airs/miniconda3/etc/profile.d/conda.sh"
+        else
+            export PATH="/home/airs/miniconda3/bin:$PATH"
+        fi
+    fi
+    unset __conda_setup
+fi
+
+# nvim
+alias vim="nvim"
+export EDITOR=nvim
+
+# tmux
+tmux_session() {
+    read "session_name?session name: "
+    tmux new-session -s "$session_name"
+}
+alias tm=tmux_session
+

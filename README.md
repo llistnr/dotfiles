@@ -42,7 +42,7 @@ Roboto Mono Nerd Font: https://github.com/ryanoasis/nerd-fonts/tree/master/patch
 
 ## Terminal Colorscheme
 
-gogh: https://gogh-co.github.io/Gogh/
+Gogh: https://gogh-co.github.io/Gogh/
 
 ```
 bash -c  "$(wget -qO- https://git.io/vQgMr)"    # Linux

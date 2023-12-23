@@ -14,7 +14,7 @@ source $ZSH/oh-my-zsh.sh
 # virtualenv for prompt
 function virtualenv_info { 
     [ $VIRTUAL_ENV ] && echo '('`basename $VIRTUAL_ENV`') ' \
-        || [ $CONDA_PROMPT_MODIFIER ] && echo `basename $CONDA_PROMPT_MODIFIER `
+        || [ $CONDA_PROMPT_MODIFIER ] && echo `basename $CONDA_PROMPT_MODIFIER`' '
 }
 
 # macOS

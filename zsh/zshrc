@@ -46,3 +46,6 @@ alias tl="tmux list-session"
 alias tn="tmux new-session -s"
 alias ta="tmux attach-session -t"
 
+# browser-sync
+alias bss="browser-sync start --server --files ."
+

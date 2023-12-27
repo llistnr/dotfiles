@@ -42,9 +42,7 @@ alias vim="nvim"
 export EDITOR=nvim
 
 # tmux
-tmux_session() {
-    read "session_name?session name: "
-    tmux new-session -s "$session_name"
-}
-alias tm=tmux_session
+alias tl="tmux list-session"
+alias tn="tmux new-session -s"
+alias ta="tmux attach-session -t"
 

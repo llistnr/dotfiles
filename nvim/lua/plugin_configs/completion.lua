@@ -64,5 +64,9 @@ vim.keymap.set('n', '<leader>H', vim.lsp.buf.hover, { buffer = 0 })
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, options)
 vim.diagnostic.config{
     virtual_text = false,
+    float = {
+        header = false,
+        border = 'single',
+    },
 }
 

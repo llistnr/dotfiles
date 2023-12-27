@@ -30,8 +30,3 @@ vim.opt.clipboard = 'unnamedplus'
 vim.opt.termguicolors = true
 vim.opt.background = 'light'
 
--- diagnostics
-vim.diagnostic.config{
-    virtual_text = false,
-}
-

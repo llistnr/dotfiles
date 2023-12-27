@@ -8,6 +8,7 @@ table.insert(vimgrep_args, '!**/.git/*')
 
 require('telescope').setup{
     defaults = {
+        borderchars = { '─', '│', '─', '│', '┌', '┐', '┘', '└' },
         layout_strategy = 'vertical',
         layout_config = {
             mirror = true,
@@ -39,7 +40,6 @@ vim.keymap.set('n', '<leader>b', builtin.buffers)
 vim.keymap.set('n', '<leader>h', builtin.help_tags)
 
 -- lazygit
-vim.g.lazygit_floating_window_scaling_factor = 0.7
-vim.g.lazygit_floating_window_border_chars = {'', '', '', '', '', '', '', ''}
+vim.g.lazygit_floating_window_scaling_factor = 1.0
 vim.keymap.set('n', '<leader>g', vim.cmd.LazyGit)
 

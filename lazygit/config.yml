@@ -3,6 +3,6 @@ gui:
   showBottomLine: false
   showCommandLog: false
   nerdFontVersion: '3'
-  border: 'rounded'
+  border: 'single'
 quitOnTopLevelReturn: true
   

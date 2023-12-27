@@ -49,6 +49,9 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 require('lspconfig')['pyright'].setup{
     capabilities = capabilities
 }
+require('lspconfig')['tsserver'].setup{
+    capabilities = capabilities
+}
 
 vim.keymap.set('n', '<leader>r', vim.lsp.buf.rename)
 vim.keymap.set('n', '<leader>d', vim.lsp.buf.definition)

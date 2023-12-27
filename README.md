@@ -48,8 +48,6 @@ Roboto Mono Nerd Font: https://github.com/ryanoasis/nerd-fonts/tree/master/patch
 Gogh: https://gogh-co.github.io/Gogh/
 
 ```
-bash -c  "$(wget -qO- https://git.io/vQgMr)"    # Linux
-bash -c  "$(curl -sLo- https://git.io/vQgMr)"   # macOS
+bash -c  "$(curl -sLo- https://git.io/vQgMr)"
 14  # for ayu-light colorscheme
 ```
-

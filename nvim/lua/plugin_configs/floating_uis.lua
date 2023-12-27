@@ -14,7 +14,7 @@ require('telescope').setup{
             mirror = true,
             height = 0.7,
             width = 100,
-            preview_height = 0.7,
+            preview_height = 0.6,
         },
         mappings = {
             i = {

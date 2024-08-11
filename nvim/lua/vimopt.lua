@@ -10,6 +10,9 @@ vim.opt.fillchars = {
     eob = ' ',
   }
 
+-- indent
+vim.opt.smartindent = true
+
 -- searching
 vim.opt.hlsearch = true
 vim.opt.incsearch = true

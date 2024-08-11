@@ -47,6 +47,7 @@ require('packer').startup(function(use)
     use 'hrsh7th/vim-vsnip'
     use 'nvim-treesitter/nvim-treesitter'
     use 'nmac427/guess-indent.nvim'
+    use 'styled-components/vim-styled-components'
 
     if packer_bootstrap then
         require('packer').sync()

@@ -70,3 +70,6 @@ vim.diagnostic.config{
     },
 }
 
+-- guess-indent
+require('guess-indent').setup{}
+

@@ -2,7 +2,7 @@ gui:
   mouseEvents: false
   showBottomLine: false
   showCommandLog: false
-  nerdFontVersion: '3'
-  border: 'single'
+  nerdFontsVersion: "3"
+  border: "single"
 quitOnTopLevelReturn: true
   

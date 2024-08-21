@@ -1,0 +1,16 @@
+* {
+    margin: 0px;
+    font-family: "RobotoMono Nerd Font";
+    font-size: 15px;
+    color: #FAFAFA;
+    background: none;
+    box-shadow: none;
+    text-shadow: none;
+    transition: none;
+}
+
+#workspaces button {
+    padding: 0px 14px 0px 0px;
+    border: none;
+}
+

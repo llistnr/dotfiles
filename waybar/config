@@ -1,0 +1,35 @@
+{
+    "margin": "20 20 0 20",
+    "spacing": 40,
+    "modules-left": ["clock", "hyprland/workspaces"],
+    "modules-right": ["network", "cpu", "memory", "pulseaudio"],
+    "clock": {
+        "format": "{:%a %b %d %H:%M}",
+    },
+    "hyprland/workspaces": {
+        "format": "workspace {name}",
+        "active-only": true,
+    },
+    "cpu": {
+        "format": "cpu {usage:03}",
+        "interval": 10,
+    },
+    "memory": {
+        "format": "ram {:03}",
+        "interval": 10,
+    },
+    "network": {
+        "format-wifi": "wifi {essid}",
+        "format-ethernet": "ethernet {ipaddr}",
+        "format-disconnected": "network disconnected",
+    },
+    "pulseaudio": {
+        "format": "audio {volume:03}",
+        "format-muted": "audio XXX",
+        "on-click": "pactl set-sink-mute 0 toggle",
+        "on-scroll-up": "pactl set-sink-volume 0 +5%",
+        "on-scroll-down": "pactl set-sink-volume 0 -5%",
+        "scroll-step": 1,
+    },
+}
+

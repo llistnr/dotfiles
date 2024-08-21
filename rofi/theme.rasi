@@ -1,0 +1,51 @@
+configuration {
+    modi: "drun";
+    font: "RobotoMono Nerd Font Regular 10";
+    display-drun: "";
+    drun-display-format: "{name}";
+}
+
+* {
+    bg: #000000;
+    fg: #FAFAFA;
+    fg-alt: #424242;
+    background-color: @bg;
+    text-color: @fg;
+}
+
+window {
+    width: 20%;
+    border-radius: 10px;
+}
+
+mainbox {
+    padding: 10px;
+    children: [inputbar, listview];
+}
+
+inputbar {
+    children: [prompt, entry];
+}
+
+entry {
+    placeholder: "search";
+    padding: 12px;
+}
+
+listview {
+    lines: 8;
+}
+
+element {
+    children: [element-text];
+}
+
+element-text {
+    padding: 12px;
+    text-color: @fg-alt;
+}
+
+element-text selected {
+    text-color: @fg;
+}
+

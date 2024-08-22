@@ -1,10 +1,11 @@
 {
-    "margin": "20 20 0 20",
+    "margin": "40 20 20 20",
     "spacing": 40,
-    "modules-left": ["clock", "hyprland/workspaces"],
-    "modules-right": ["network", "cpu", "memory", "pulseaudio"],
+    "modules-left": ["clock", "hyprland/workspaces", "hyprland/window"],
+    "modules-right": ["network", "cpu", "memory", "pulseaudio", "custom/notification"],
     "clock": {
         "format": "{:%a %b %d %H:%M}",
+        "tooltip": false,
     },
     "hyprland/workspaces": {
         "format": "workspace {name}",
@@ -13,15 +14,18 @@
     "cpu": {
         "format": "cpu {usage:03}",
         "interval": 10,
+        "tooltip": false,
     },
     "memory": {
         "format": "ram {:03}",
         "interval": 10,
+        "tooltip": false,
     },
     "network": {
         "format-wifi": "wifi {essid}",
         "format-ethernet": "ethernet {ipaddr}",
         "format-disconnected": "network disconnected",
+        "tooltip": false,
     },
     "pulseaudio": {
         "format": "audio {volume:03}",
@@ -30,6 +34,27 @@
         "on-scroll-up": "pactl set-sink-volume 0 +5%",
         "on-scroll-down": "pactl set-sink-volume 0 -5%",
         "scroll-step": 1,
+        "tooltip": false,
+    },
+    "custom/notification": {
+        "format": "notifications {icon}",
+        "format-icons": {
+            "notification": "<span foreground='red'><sup></sup></span>",
+            "none": "",
+            "dnd-notification": "<span foreground='red'><sup></sup></span>",
+            "dnd-none": "",
+            "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+            "inhibited-none": "",
+            "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+            "dnd-inhibited-none": ""
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw",
+        "escape": true,
+        "tooltip": false,
     },
 }
 

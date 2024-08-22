@@ -15,10 +15,10 @@ configuration {
 
 window {
     width: 20%;
+    padding: 40px;
 }
 
 mainbox {
-    padding: 10px;
     children: [inputbar, listview];
 }
 
@@ -28,7 +28,6 @@ inputbar {
 
 entry {
     placeholder: "search";
-    padding: 12px;
 }
 
 listview {
@@ -40,7 +39,7 @@ element {
 }
 
 element-text {
-    padding: 12px;
+    padding: 20px 0px 0px 0px;
     text-color: @fg-alt;
 }
 

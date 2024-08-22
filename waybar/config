@@ -2,9 +2,9 @@
     "margin": "40 20 20 20",
     "spacing": 40,
     "modules-left": ["clock", "hyprland/workspaces", "hyprland/window"],
-    "modules-right": ["network", "cpu", "memory", "pulseaudio", "custom/notification"],
+    "modules-right": ["pulseaudio", "cpu", "memory", "network", "custom/notification"],
     "clock": {
-        "format": "{:%a %b %d %H:%M}",
+        "format": "{:%A %B %d %H:%M}",
         "tooltip": false,
     },
     "hyprland/workspaces": {

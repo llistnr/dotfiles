@@ -30,9 +30,6 @@ require('packer').startup(function(use)
     use { 'nvim-telescope/telescope.nvim', tag = '0.1.5' }
     use 'kdheepak/lazygit.nvim'
 
-    -- session
-    use 'rmagatti/auto-session'
-
     -- tmux
     use 'christoomey/vim-tmux-navigator'
 

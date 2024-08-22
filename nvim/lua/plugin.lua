@@ -54,7 +54,6 @@ end)
 require('plugin_configs.colorscheme')
 require('plugin_configs.basic_uis')
 require('plugin_configs.floating_uis')
-require('plugin_configs.session')
 require('plugin_configs.tmux')
 require('plugin_configs.completion')
 

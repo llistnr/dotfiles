@@ -1,6 +1,6 @@
 configuration {
     modi: "drun";
-    font: "RobotoMono Nerd Font Regular 11";
+    font: "RobotoMono Nerd Font Propo Regular 11";
     display-drun: "";
     drun-display-format: "{name}";
 }

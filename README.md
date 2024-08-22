@@ -1,53 +1,19 @@
 # dotfiles
 
-![screenshot](screenshot.png)
+Personal dotfiles for git, hyprland, kitty, lazygit, nvim, rofi, tmux, waybar, zsh in archlinux.
 
-Personal dotfiles for brew, git, lazygit, nvim, tmux, zsh in Linux/macOS.
-
-## Prerequisites
-
-Install below tools before applying dotfiles.
-
-- brew(macOS) https://brew.sh
-- git https://git-scm.com
-- lazygit https://github.com/jesseduffield/lazygit
-- neovim https://github.com/neovim/neovim
-- tmux https://github.com/tmux/tmux
-- zsh https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH
-- oh-my-zsh https://github.com/ohmyzsh/ohmyzsh
-- asdf https://asdf-vm.com/guide/getting-started.html
-
-## Installation
-
-Clone this repository and apply dotfiles.
+## installation
 
 ```
+# install prerequisites
+sudo pacman -S ttf-roboto-mono-nerd wget
+sudo pacman -S git hyprland hyprpaper kitty lazygit neovim tmux waybar zsh
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone https://aur.archlinux.org/asdf-vm.git && cd asdf-vm && makepkg -si
+
+# clone and apply dotfiles
 git clone git@github.com:llistnr/dotfiles.git ~/.dotfiles
-
-# Install brew packages(macOS)
-brew bundle
-
-# Install zsh plugins
 source ~/.dotfiles/zsh/install_plugins.sh
-
-# Create symbolic links
-ln -s ~/.dotfiles/git/gitconfig ~/.gitconfig
-ln -s ~/.dotfiles/lazygit/config.yml ~/.config/lazygit/config.yml
-ln -s ~/.dotfiles/tmux/tmux.conf ~/.tmux.conf
-ln -s ~/.dotfiles/nvim ~/.config/nvim
-ln -s ~/.dotfiles/zsh/zshrc ~/.zshrc
-ln -s ~/.dotfiles/zsh/seungho.zsh-theme ~/.oh-my-zsh/themes/seungho.zsh-theme
+source ~/.dotfiles/create_symlink.sh
 ```
 
-## Terminal Fonts
-
-Roboto Mono Nerd Font: https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/RobotoMono
-
-## Terminal Colorscheme
-
-Gogh: https://gogh-co.github.io/Gogh/
-
-```
-bash -c  "$(curl -sLo- https://git.io/vQgMr)"
-14  # for ayu-light colorscheme
-```

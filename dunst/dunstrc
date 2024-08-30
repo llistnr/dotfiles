@@ -1,14 +1,15 @@
 [global]
 
 # general
+markup = yes
 notification_limit = 1
 enable_posix_regex = true
 override_dbus_timeout = 0
 stack_duplicates = false
+show_indicators = no
 
 # geometry
 width = 600
-height = 500
 padding = 40
 horizontal_padding = 40
 frame_width = 0
@@ -16,8 +17,13 @@ origin = center
 
 # style
 font = RobotoMono Nerd Font Propo 11
-format = <b>[%a] %s</b>\n%b
+format = <b>%a\n%s</b>\n%b
 icon_position = off
 background = "#000000"
 foreground = "#FAFAFA"
+
+# mouse
+mouse_left_click = do_action, close_current
+mouse_middle_click = close_all
+mouse_right_click = close_current
 

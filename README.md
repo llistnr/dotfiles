@@ -1,12 +1,12 @@
 # dotfiles
 
-Personal dotfiles for dunst, git, hyprland, kitty, lazygit, nvim, rofi, tmux, waybar, and zsh.
+configs for hyprland, kitty, neovim, tmux, zsh and more.
 
 ## installation
 
 ```
 # install packages
-sudo pacman -S ttf-roboto-mono-nerd wget
+sudo pacman -S ttf-roboto-mono-nerd wget ripgrep
 sudo pacman -S dunst git hyprland hyprpaper kitty lazygit neovim rofi tmux waybar zsh
 
 # install oh-my-zsh and asdf

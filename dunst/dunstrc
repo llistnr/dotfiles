@@ -9,17 +9,22 @@ stack_duplicates = false
 show_indicators = no
 
 # geometry
-width = 600
-padding = 40
-horizontal_padding = 40
+width = 3032
+padding = 20
+horizontal_padding = 0
+offset = 20 x -40
 frame_width = 0
-origin = center
+origin = top-left
 
 # style
 font = RobotoMono Nerd Font Propo 11
-format = <b>%a\n%s</b>\n%b
+format = "<b>%a</b> | <b>%s</b> | %b"
+ignore_newline = true
+word_wrap = false
 icon_position = off
-background = "#000000"
+ellipsize = middle
+alignment = left
+background = "#00000000"
 foreground = "#FAFAFA"
 
 # mouse

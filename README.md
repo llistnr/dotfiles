@@ -5,9 +5,11 @@ Personal dotfiles for dunst, git, hyprland, kitty, lazygit, nvim, rofi, tmux, wa
 ## installation
 
 ```
-# install prerequisites
+# install packages
 sudo pacman -S ttf-roboto-mono-nerd wget
 sudo pacman -S dunst git hyprland hyprpaper kitty lazygit neovim rofi tmux waybar zsh
+
+# install oh-my-zsh and asdf
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://aur.archlinux.org/asdf-vm.git && cd asdf-vm && makepkg -si
 

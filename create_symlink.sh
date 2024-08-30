@@ -2,6 +2,7 @@
 
 # remove existing dotfiles
 rm ~/.gitconfig
+rm -r ~/.config/dunst
 rm -r ~/.config/hypr
 rm -r ~/.config/kitty
 rm -r ~/.config/lazygit
@@ -14,6 +15,7 @@ rm ~/.oh-my-zsh/themes/seungho.zsh-theme
 
 # create symbolic links
 ln -s ~/.dotfiles/git/gitconfig ~/.gitconfig
+ln -s ~/.dotfiles/dunst ~/.config/dunst
 ln -s ~/.dotfiles/hypr ~/.config/hypr
 ln -s ~/.dotfiles/kitty ~/.config/kitty
 ln -s ~/.dotfiles/lazygit ~/.config/lazygit

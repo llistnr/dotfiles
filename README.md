@@ -7,7 +7,7 @@ configs for hyprland, kitty, neovim, tmux, zsh and more.
 ```
 # install packages
 sudo pacman -S ttf-roboto-mono-nerd wget ripgrep
-sudo pacman -S dunst git hyprland hyprpaper kitty lazygit neovim rofi tmux waybar zsh
+sudo pacman -S dunst git hyprland hyprpaper kitty lazygit neovim rofi-wayland tmux waybar zsh
 
 # install oh-my-zsh and asdf
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"

@@ -15,6 +15,7 @@ horizontal_padding = 0
 offset = 20 x -40
 frame_width = 0
 origin = top-left
+layer = top
 
 # style
 font = RobotoMono Nerd Font Propo 11

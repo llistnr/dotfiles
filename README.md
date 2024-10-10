@@ -14,7 +14,7 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools
 git clone https://aur.archlinux.org/asdf-vm.git && cd asdf-vm && makepkg -si
 
 # clone and apply dotfiles
-git clone git@github.com:llistnr/dotfiles.git ~/.dotfiles
+git clone https://github.com/llistnr/dotfiles.git ~/.dotfiles
 source ~/.dotfiles/install.sh
 ```
 
